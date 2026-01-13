@@ -37,6 +37,18 @@ Manage dev processes via tmux sessions. Enables multiple Claude Code sessions to
 
 [View tmux-dev documentation](plugins/tmux-dev/README.md)
 
+### prevent-sleep
+
+Prevent your Mac from sleeping during Claude Code sessions using caffeinate hooks.
+
+**Features:**
+- Automatically keeps Mac awake while Claude is working
+- Uses macOS built-in `caffeinate` command
+- 1-hour timeout with auto-reset on each prompt
+- Clean hook-based implementation
+
+[View prevent-sleep documentation](plugins/prevent-sleep/README.md)
+
 ## Adding New Plugins
 
 To add a new plugin to this marketplace:
