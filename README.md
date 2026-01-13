@@ -1,28 +1,28 @@
-# Claude Skills Marketplace
+# Claude Marketplace
 
-A collection of Claude Code skills by leetwito.
+A collection of Claude Code plugins by leetwito.
 
 ## Installation
 
 Add this marketplace to Claude Code:
 
 ```bash
-/plugin marketplace add leetwito/claude-skills-marketplace
+/plugin marketplace add leetwito/claude-marketplace
 ```
 
 Then install individual plugins:
 
 ```bash
-/plugin install tmux-dev@leetwito-skills
+/plugin install tmux-dev@leetwito-marketplace
 ```
 
 Or install a plugin directly without adding the marketplace:
 
 ```bash
-/plugin add github:leetwito/claude-skills-marketplace/plugins/tmux-dev
+/plugin add github:leetwito/claude-marketplace/plugins/tmux-dev
 ```
 
-## Available Skills
+## Available Plugins
 
 ### tmux-dev
 
@@ -37,13 +37,13 @@ Manage dev processes via tmux sessions. Enables multiple Claude Code sessions to
 
 [View tmux-dev documentation](plugins/tmux-dev/README.md)
 
-## Adding New Skills
+## Adding New Plugins
 
-To add a new skill to this marketplace:
+To add a new plugin to this marketplace:
 
-1. Create a new plugin directory: `plugins/your-skill-name/`
+1. Create a new plugin directory: `plugins/your-plugin-name/`
 2. Add `.claude-plugin/plugin.json` with plugin metadata
-3. Add `skills/your-skill-name/SKILL.md` with the skill definition
+3. Add skills, hooks, commands, or agents as needed
 4. Update `marketplace.json` to include the new plugin
 5. Tag a new release
 
