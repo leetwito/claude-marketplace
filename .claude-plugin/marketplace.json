@@ -1,19 +1,28 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "leetwito-marketplace",
   "description": "A collection of Claude Code plugins by leetwito",
-  "author": {
+  "owner": {
     "name": "leetwito"
   },
   "plugins": [
     {
       "name": "tmux-dev",
-      "path": "plugins/tmux-dev",
-      "description": "Manage dev processes via tmux for multi-session access"
+      "description": "Manage dev processes via tmux for multi-session access",
+      "version": "1.0.0",
+      "author": {
+        "name": "leetwito"
+      },
+      "source": "./plugins/tmux-dev"
     },
     {
       "name": "prevent-sleep",
-      "path": "plugins/prevent-sleep",
-      "description": "Prevent Mac from sleeping during Claude Code sessions"
+      "description": "Prevent Mac from sleeping during Claude Code sessions",
+      "version": "1.0.0",
+      "author": {
+        "name": "leetwito"
+      },
+      "source": "./plugins/prevent-sleep"
     }
   ]
 }
