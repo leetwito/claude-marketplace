@@ -1,0 +1,27 @@
+{
+  "description": "Prevent Mac from sleeping during Claude Code sessions",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/prevent-sleep.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/allow-sleep.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

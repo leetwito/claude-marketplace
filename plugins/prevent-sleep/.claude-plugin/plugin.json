@@ -5,19 +5,5 @@
   "author": {
     "name": "leetwito"
   },
-  "license": "MIT",
-  "hooks": {
-    "UserPromptSubmit": [
-      {
-        "type": "command",
-        "command": "$CLAUDE_PLUGIN_DIR/hooks/prevent-sleep.sh"
-      }
-    ],
-    "Stop": [
-      {
-        "type": "command",
-        "command": "$CLAUDE_PLUGIN_DIR/hooks/allow-sleep.sh"
-      }
-    ]
-  }
+  "license": "MIT"
 }
