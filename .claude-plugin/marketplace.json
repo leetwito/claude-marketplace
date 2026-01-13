@@ -1,0 +1,14 @@
+{
+  "name": "leetwito-skills",
+  "description": "A collection of Claude Code skills by leetwito",
+  "author": {
+    "name": "leetwito"
+  },
+  "plugins": [
+    {
+      "name": "tmux-dev",
+      "path": "plugins/tmux-dev",
+      "description": "Manage dev processes via tmux for multi-session access"
+    }
+  ]
+}

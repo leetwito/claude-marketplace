@@ -1,0 +1,10 @@
+{
+  "name": "tmux-dev",
+  "version": "1.0.0",
+  "description": "Manage dev processes via tmux sessions. Enables multiple Claude Code sessions to share access to running processes.",
+  "author": {
+    "name": "leetwito"
+  },
+  "license": "MIT",
+  "skills": ["skills/tmux-dev"]
+}
