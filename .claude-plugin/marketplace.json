@@ -9,6 +9,11 @@
       "name": "tmux-dev",
       "path": "plugins/tmux-dev",
       "description": "Manage dev processes via tmux for multi-session access"
+    },
+    {
+      "name": "prevent-sleep",
+      "path": "plugins/prevent-sleep",
+      "description": "Prevent Mac from sleeping during Claude Code sessions"
     }
   ]
 }
