@@ -1,11 +1,11 @@
 ---
 name: gam
 description: >
-  GAM CLI assistant for Google Workspace administration. Use when the user asks
-  to manage users, groups, OUs, Drive, Gmail, reports, licenses, Chrome devices,
-  or any other Google Workspace domain/user settings via the GAM7 command-line
-  tool. Also use when they need help installing, configuring, or authorizing GAM,
-  constructing bulk CSV commands, writing batch files, or troubleshooting GAM errors.
+  GAM — command-line tool for Google Workspace Admins. Use when a Google Workspace
+  Admin asks to manage users, groups, OUs, Drive, Gmail, reports, licenses, or
+  Chrome devices. Also use when they need help installing, configuring, or
+  authorizing GAM, constructing bulk CSV commands, writing batch files, or
+  troubleshooting GAM errors.
 allowed-tools: Read, Grep, Glob, Bash
 ---
 
