@@ -23,6 +23,15 @@
         "name": "leetwito"
       },
       "source": "./plugins/prevent-sleep"
+    },
+    {
+      "name": "gam",
+      "description": "GAM CLI assistant for Google Workspace administration",
+      "version": "1.0.0",
+      "author": {
+        "name": "leetwito"
+      },
+      "source": "./plugins/gam"
     }
   ]
 }

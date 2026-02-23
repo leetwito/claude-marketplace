@@ -1,0 +1,10 @@
+{
+  "name": "gam",
+  "version": "1.0.0",
+  "description": "GAM CLI assistant for Google Workspace administration. Helps construct, explain, and run GAM7 commands for user/group/drive/gmail management.",
+  "author": {
+    "name": "leetwito"
+  },
+  "license": "MIT",
+  "skills": ["skills/gam"]
+}
