@@ -9,7 +9,7 @@
     {
       "name": "tmux-dev",
       "description": "Manage dev processes via tmux for multi-session access",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "leetwito"
       },
