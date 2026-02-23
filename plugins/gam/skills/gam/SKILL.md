@@ -170,7 +170,8 @@ Full syntax: [wiki/Groups.md](wiki/Groups.md) | [wiki/Groups-Membership.md](wiki
 ## Organizational Units
 
 ```bash
-gam create org "/Students/2029" [parent "/Students"]
+gam create org "/Students/2029"
+gam create org "/Students/2029/Sub" parent "/Students/2029"
 gam update org "/Students/2028" name "Graduates"
 gam delete org "/Students/2028"
 gam print orgs fields path,name
@@ -193,10 +194,10 @@ gam user leaver@d.com transfer drive newowner@d.com
 gam user leaver@d.com transfer drive newowner@d.com targetuserfoldername "From leaver" preview
 
 # Shared Drives
-gam create teamdrive "Team Name"
-gam print teamdrives
-gam add teamdriveacls <driveID> user u@d.com role organizer
-gam print teamdriveacls
+gam create shareddrive "Team Name"
+gam print shareddrives
+gam add drivefileacl <driveID> user u@d.com role organizer
+gam print shareddriveacls
 
 # File list / permissions (service account)
 gam user u@d.com print filelist fields id,name,owners
@@ -289,6 +290,6 @@ gam user leaver@d.com remove groups
 - **`redirect`** — capture output: `gam redirect stdout out.csv redirect stderr err.txt <command>`
 - **Short domain** — once `domain` is set in `gam.cfg`, you can write `user` instead of `user@domain.com`.
 - **Version check:** `gam version`
-- **Help for any command:** `gam help <topic>`
+- **Help:** `gam help` (shows version + link to wiki)
 - **Return codes:** [wiki/GAM-Return-Codes.md](wiki/GAM-Return-Codes.md)
 - **Config reference:** [wiki/gam.cfg.md](wiki/gam.cfg.md)
