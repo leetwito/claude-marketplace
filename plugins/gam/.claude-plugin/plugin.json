@@ -6,5 +6,5 @@
     "name": "leetwito"
   },
   "license": "MIT",
-  "skills": ["skills/gam"]
+  "skills": "./skills/"
 }
