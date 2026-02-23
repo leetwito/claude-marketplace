@@ -9,15 +9,14 @@ description: >
 allowed-tools: Read, Grep, Glob, Bash
 ---
 
-# GAM7 — Google Workspace Admin CLI
+# GAM — Google Workspace Admin CLI
 
-GAM7 is a free, open-source CLI for Google Workspace administrators.
-It wraps Google Admin SDK and Workspace APIs to manage domain settings,
-users, groups, Drive, Gmail, Chrome devices, and more from the command line.
+GAM is a command line tool for Google Workspace admins to manage domain and user settings quickly and easily.
 
 - **GitHub:** https://github.com/GAM-team/GAM
 - **Wiki (live):** https://github.com/GAM-team/GAM/wiki
 - **Discussion:** https://groups.google.com/group/google-apps-manager
+- **Chat room:** https://github.com/GAM-team/GAM/wiki/GAM-Public-Chat-Room
 
 > **Wiki snapshot:** 2026-02-23. All 166 wiki pages are included in
 > `wiki/` alongside this file. For the most current syntax, browse the
@@ -27,147 +26,60 @@ users, groups, Drive, Gmail, Chrome devices, and more from the command line.
 
 ## Supporting Reference Files
 
-All GAM wiki pages are available locally in `wiki/`. Read them for
-complete syntax, BNF definitions, and examples:
+All GAM wiki pages are available locally in `wiki/`. Read them for complete syntax, BNF definitions, and examples:
 
-| Topic | Local file |
-|---|---|
-| Installation (downloads) | [wiki/Downloads-Installs.md](wiki/Downloads-Installs.md) |
-| Install guide (Linux/Mac/Win) | [wiki/How-to-Install-GAM7.md](wiki/How-to-Install-GAM7.md) |
-| Update GAM7 | [wiki/How-to-Update-GAM7.md](wiki/How-to-Update-GAM7.md) |
-| Authorization | [wiki/Authorization.md](wiki/Authorization.md) |
-| Configuration (gam.cfg) | [wiki/gam.cfg.md](wiki/gam.cfg.md) |
-| Users | [wiki/Users.md](wiki/Users.md) |
-| Collections of Users | [wiki/Collections-of-Users.md](wiki/Collections-of-Users.md) |
-| User Deprovision | [wiki/Users-Deprovision.md](wiki/Users-Deprovision.md) |
-| Groups | [wiki/Groups.md](wiki/Groups.md) |
-| Groups Membership | [wiki/Groups-Membership.md](wiki/Groups-Membership.md) |
-| Organizational Units | [wiki/Organizational-Units.md](wiki/Organizational-Units.md) |
-| Drive Transfer | [wiki/Users-Drive-Transfer.md](wiki/Users-Drive-Transfer.md) |
-| Drive Files (manage) | [wiki/Users-Drive-Files-Manage.md](wiki/Users-Drive-Files-Manage.md) |
-| Drive Files (display) | [wiki/Users-Drive-Files-Display.md](wiki/Users-Drive-Files-Display.md) |
-| Drive Permissions | [wiki/Users-Drive-Permissions.md](wiki/Users-Drive-Permissions.md) |
-| Drive Ownership | [wiki/Users-Drive-Ownership.md](wiki/Users-Drive-Ownership.md) |
-| Drive Copy/Move | [wiki/Users-Drive-Copy-Move.md](wiki/Users-Drive-Copy-Move.md) |
-| Drive Cleanup | [wiki/Users-Drive-Cleanup.md](wiki/Users-Drive-Cleanup.md) |
-| Drive Orphans | [wiki/Users-Drive-Orphans.md](wiki/Users-Drive-Orphans.md) |
-| Drive Query | [wiki/Users-Drive-Query.md](wiki/Users-Drive-Query.md) |
-| Drive File Selection | [wiki/Drive-File-Selection.md](wiki/Drive-File-Selection.md) |
-| Shared Drives | [wiki/Shared-Drives.md](wiki/Shared-Drives.md) |
-| Gmail Settings | [wiki/Users-Gmail-Settings.md](wiki/Users-Gmail-Settings.md) |
-| Gmail Delegates | [wiki/Users-Gmail-Delegates.md](wiki/Users-Gmail-Delegates.md) |
-| Gmail Forwarding | [wiki/Users-Gmail-Forwarding.md](wiki/Users-Gmail-Forwarding.md) |
-| Gmail SendAs/Signature/Vacation | [wiki/Users-Gmail-Send-As-Signature-Vacation.md](wiki/Users-Gmail-Send-As-Signature-Vacation.md) |
-| Gmail Labels | [wiki/Users-Gmail-Labels.md](wiki/Users-Gmail-Labels.md) |
-| Gmail Filters | [wiki/Users-Gmail-Filters.md](wiki/Users-Gmail-Filters.md) |
-| Gmail Messages/Threads | [wiki/Users-Gmail-Messages-Threads.md](wiki/Users-Gmail-Messages-Threads.md) |
-| Reports | [wiki/Reports.md](wiki/Reports.md) |
-| Bulk Processing | [wiki/Bulk-Processing.md](wiki/Bulk-Processing.md) |
-| CSV Input Filtering | [wiki/CSV-Input-Filtering.md](wiki/CSV-Input-Filtering.md) |
-| CSV Output Filtering | [wiki/CSV-Output-Filtering.md](wiki/CSV-Output-Filtering.md) |
-| Todrive | [wiki/Todrive.md](wiki/Todrive.md) |
-| Licenses | [wiki/Licenses.md](wiki/Licenses.md) |
-| ChromeOS Devices | [wiki/ChromeOS-Devices.md](wiki/ChromeOS-Devices.md) |
-| Calendars | [wiki/Calendars.md](wiki/Calendars.md) |
-| Calendar Events | [wiki/Calendars-Events.md](wiki/Calendars-Events.md) |
-| Send Email | [wiki/Send-Email.md](wiki/Send-Email.md) |
-| Aliases | [wiki/Aliases.md](wiki/Aliases.md) |
-| Domains | [wiki/Domains.md](wiki/Domains.md) |
-| Administrators | [wiki/Administrators.md](wiki/Administrators.md) |
-| Mobile Devices | [wiki/Mobile-Devices.md](wiki/Mobile-Devices.md) |
-| Resources | [wiki/Resources.md](wiki/Resources.md) |
-| Cloud Identity Groups | [wiki/Cloud-Identity-Groups.md](wiki/Cloud-Identity-Groups.md) |
-| Vault / Takeout | [wiki/Vault-Takeout.md](wiki/Vault-Takeout.md) |
-| BNF Syntax | [wiki/BNF-Syntax.md](wiki/BNF-Syntax.md) |
-| Command Line Parsing | [wiki/Command-Line-Parsing.md](wiki/Command-Line-Parsing.md) |
-| GAM Return Codes | [wiki/GAM-Return-Codes.md](wiki/GAM-Return-Codes.md) |
-| Scripts | [wiki/Scripts.md](wiki/Scripts.md) |
-| Find File Owner | [wiki/Find-File-Owner.md](wiki/Find-File-Owner.md) |
-| Classroom Courses | [wiki/Classroom-Courses.md](wiki/Classroom-Courses.md) |
-| User Contacts | [wiki/Users-People-Contacts-Profiles.md](wiki/Users-People-Contacts-Profiles.md) |
-| User Tasks | [wiki/Users-Tasks.md](wiki/Users-Tasks.md) |
-| User Meet | [wiki/Users-Meet.md](wiki/Users-Meet.md) |
-| User Chat | [wiki/Users-Chat.md](wiki/Users-Chat.md) |
-| Schemas | [wiki/Schemas.md](wiki/Schemas.md) |
-| Tag Replace | [wiki/Tag-Replace.md](wiki/Tag-Replace.md) |
+[Downloads-Installs](wiki/Downloads-Installs.md) · [How-to-Install-GAM7](wiki/How-to-Install-GAM7.md) · [How-to-Update-GAM7](wiki/How-to-Update-GAM7.md) · [Authorization](wiki/Authorization.md) · [gam.cfg](wiki/gam.cfg.md) · [Users](wiki/Users.md) · [Collections-of-Users](wiki/Collections-of-Users.md) · [Users-Deprovision](wiki/Users-Deprovision.md) · [Groups](wiki/Groups.md) · [Groups-Membership](wiki/Groups-Membership.md) · [Organizational-Units](wiki/Organizational-Units.md) · [Users-Drive-Transfer](wiki/Users-Drive-Transfer.md) · [Users-Drive-Files-Manage](wiki/Users-Drive-Files-Manage.md) · [Users-Drive-Files-Display](wiki/Users-Drive-Files-Display.md) · [Users-Drive-Permissions](wiki/Users-Drive-Permissions.md) · [Users-Drive-Ownership](wiki/Users-Drive-Ownership.md) · [Users-Drive-Copy-Move](wiki/Users-Drive-Copy-Move.md) · [Users-Drive-Cleanup](wiki/Users-Drive-Cleanup.md) · [Users-Drive-Orphans](wiki/Users-Drive-Orphans.md) · [Users-Drive-Query](wiki/Users-Drive-Query.md) · [Drive-File-Selection](wiki/Drive-File-Selection.md) · [Shared-Drives](wiki/Shared-Drives.md) · [Users-Gmail-Settings](wiki/Users-Gmail-Settings.md) · [Users-Gmail-Delegates](wiki/Users-Gmail-Delegates.md) · [Users-Gmail-Forwarding](wiki/Users-Gmail-Forwarding.md) · [Users-Gmail-Send-As-Signature-Vacation](wiki/Users-Gmail-Send-As-Signature-Vacation.md) · [Users-Gmail-Labels](wiki/Users-Gmail-Labels.md) · [Users-Gmail-Filters](wiki/Users-Gmail-Filters.md) · [Users-Gmail-Messages-Threads](wiki/Users-Gmail-Messages-Threads.md) · [Reports](wiki/Reports.md) · [Bulk-Processing](wiki/Bulk-Processing.md) · [CSV-Input-Filtering](wiki/CSV-Input-Filtering.md) · [CSV-Output-Filtering](wiki/CSV-Output-Filtering.md) · [Todrive](wiki/Todrive.md) · [Licenses](wiki/Licenses.md) · [ChromeOS-Devices](wiki/ChromeOS-Devices.md) · [Calendars](wiki/Calendars.md) · [Calendars-Events](wiki/Calendars-Events.md) · [Send-Email](wiki/Send-Email.md) · [Aliases](wiki/Aliases.md) · [Domains](wiki/Domains.md) · [Administrators](wiki/Administrators.md) · [Mobile-Devices](wiki/Mobile-Devices.md) · [Resources](wiki/Resources.md) · [Cloud-Identity-Groups](wiki/Cloud-Identity-Groups.md) · [Vault-Takeout](wiki/Vault-Takeout.md) · [BNF-Syntax](wiki/BNF-Syntax.md) · [Command-Line-Parsing](wiki/Command-Line-Parsing.md) · [GAM-Return-Codes](wiki/GAM-Return-Codes.md) · [Scripts](wiki/Scripts.md) · [Find-File-Owner](wiki/Find-File-Owner.md) · [Classroom-Courses](wiki/Classroom-Courses.md) · [Users-People-Contacts-Profiles](wiki/Users-People-Contacts-Profiles.md) · [Users-Tasks](wiki/Users-Tasks.md) · [Users-Meet](wiki/Users-Meet.md) · [Users-Chat](wiki/Users-Chat.md) · [Schemas](wiki/Schemas.md) · [Tag-Replace](wiki/Tag-Replace.md)
 
 ---
 
 ## Installation & Quick Start
 
-### 1. Download & Install
+### Linux / macOS
 
-**Linux / macOS / Cloud Shell (automatic installer):**
-```bash
-# New install (default path: $HOME/bin/gam7):
-bash <(curl -s -S -L https://git.io/gam-install)
+Open a terminal and run:
 
-# Specify custom path:
-bash <(curl -s -S -L https://git.io/gam-install) -d /opt/gam7
-
-# Update only (no re-auth):
-bash <(curl -s -S -L https://git.io/gam-install) -l
+```sh
+bash <(curl -s -S -L https://gam-shortn.appspot.com/gam-install)
 ```
 
-**Windows:** Download the MSI from https://github.com/GAM-team/GAM/releases/latest
+This downloads GAM, installs it, and starts setup (project creation, OAuth, service account) in one flow.
 
-**Python package:**
-```bash
+### Windows
+
+Download the MSI Installer from the [GitHub Releases](https://github.com/GAM-team/GAM/releases) page. Install the MSI and you'll be prompted to set up GAM.
+
+### Python package
+
+```sh
 pip install gam7
 ```
 
-Full download options: [wiki/Downloads-Installs.md](wiki/Downloads-Installs.md)
+### Post-install setup (if not done by the installer)
 
-### 2. Set Configuration Directory (Linux/macOS)
-
-```bash
-mkdir -p ~/GAMConfig ~/GAMWork
-echo 'export GAMCFGDIR="$HOME/GAMConfig"' >> ~/.zshrc   # or ~/.bashrc
-echo 'alias gam="$HOME/bin/gam7/gam"'    >> ~/.zshrc
-source ~/.zshrc
-
-# Initialize:
-gam config drive_dir ~/GAMWork verify
-```
-
-### 3. Create GCP Project & Enable APIs
+The installer normally handles all of this. If you need to run steps manually:
 
 ```bash
+# 1. Create GCP project and enable APIs (~23 APIs):
 gam create project
-# Follow prompts: enter super admin email, authorize in browser,
-# then enter Client ID and Client Secret from GCP console.
-```
 
-This enables ~23 Google APIs automatically.
-
-### 4. Authorize Client Access (Admin OAuth)
-
-```bash
+# 2. Authorize client access (admin OAuth):
 gam oauth create
-# Select scopes (press 'c' to continue with defaults),
-# enter admin email, authorize in browser.
-```
+# Select scopes, press 'c', enter admin email, authorize in browser.
 
-### 5. Authorize Service Account (for User-level data)
-
-```bash
+# 3. Authorize service account (for per-user Drive, Gmail, Calendar…):
 gam user admin@domain.com update serviceaccount
-# Select scopes, press 'c', then follow the link to
-# Google Admin > Security > API Controls > Domain-wide Delegation.
-# Click AUTHORIZE.
+# Press 'c', then follow the link to:
+# Google Admin > Security > API Controls > Domain-wide Delegation > AUTHORIZE
 
-# Verify (may take a few minutes to propagate):
+# 4. Verify service account (propagation may take a few minutes):
 gam user admin@domain.com check serviceaccount
-```
 
-### 6. Configure gam.cfg
-
-```bash
+# 5. Finalize gam.cfg:
 gam info domain   # note your Customer ID
 gam config customer_id C01234567 domain yourdomain.com timezone local save verify
 ```
 
-Full step-by-step with screenshots: [wiki/How-to-Install-GAM7.md](wiki/How-to-Install-GAM7.md)
+Full step-by-step guide: [wiki/How-to-Install-GAM7.md](wiki/How-to-Install-GAM7.md) · [wiki/Downloads-Installs.md](wiki/Downloads-Installs.md)
 
 ---
 
