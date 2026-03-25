@@ -1,5 +1,5 @@
 ---
-name: google-workspace
+name: gws-hub
 description: Use when working with any Google Workspace service — Gmail, Drive, Calendar, Sheets, Docs, Meet, Chat, Forms, Slides, Tasks, etc. Routes to the appropriate on-demand gws-specific skill.
 ---
 
