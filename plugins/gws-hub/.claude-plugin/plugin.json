@@ -1,6 +1,6 @@
 {
   "name": "gws-hub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hub skill for Google Workspace — routes to the right gws-* on-demand skill for Gmail, Drive, Calendar, Sheets, Docs, Meet, Chat, and more.",
   "author": {
     "name": "leetwito"
